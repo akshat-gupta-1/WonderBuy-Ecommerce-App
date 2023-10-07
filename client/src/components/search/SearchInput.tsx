@@ -1,5 +1,5 @@
 import { Search } from "lucide-react";
-import { InputHTMLAttributes, useState } from "react";
+import { useState } from "react";
 import useSearch from "./hooks/useSearch";
 import useDebounce from "./hooks/useDebounce";
 import Spinner from "@/shared/Spinner";
@@ -55,7 +55,7 @@ const SearchInput = () => {
       </div>
       <div
         className={cn(
-          "absolute top-12 hidden min-h-[40px] w-full rounded-sm border border-slate-7 bg-white p-2",
+          "absolute top-12 hidden min-h-[40px] w-full rounded-sm border border-slate-7 bg-white p-2 py-1",
           { block: open },
         )}
       >
@@ -78,8 +78,10 @@ const SearchInput = () => {
                 )}
                 key={item._id}
               >
-                <p className="text-base font-medium">{item.name}</p>
-                <p className="text-sm text-slate-10">in {item.category}</p>
+                <p className="text-sm font-medium sm:text-base">{item.name}</p>
+                <p className="text-xs text-slate-10 sm:text-sm">
+                  in {item.category}
+                </p>
               </div>
             );
           })

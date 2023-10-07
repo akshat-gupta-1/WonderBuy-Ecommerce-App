@@ -20,13 +20,13 @@ const Product = () => {
     setImage(getItemDetails.data?.imageUrl[0]);
   }, [getItemDetails.data]);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[minmax(300px,_1fr)_minmax(300px,_500px)]">
+    <div className="grid grid-cols-1 gap-x-4 md:grid-cols-[minmax(300px,_1fr)_minmax(300px,_500px)]">
       <div>
         <div className="mb-4 flex justify-center">
           <img
             src={image}
             alt={`${getItemDetails.data?.name} image`}
-            className="max-h-[600px] max-w-[600px] "
+            className="max-h-[300px] max-w-[300px] sm:max-h-[400px] sm:max-w-[400px] md:max-h-[500px] lg:max-h-[600px] lg:max-w-[600px]"
           />
         </div>
         <div className="flex justify-center space-x-2">

@@ -5,6 +5,7 @@ import { Input } from "../ui/input";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import Footer from "../HomePage/Footer";
 const ProductsPageLayout = () => {
   const [initial, setInitial] = useState<number>(0);
   const [final, setFinal] = useState<number>(2000);
@@ -90,6 +91,7 @@ const ProductsPageLayout = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
