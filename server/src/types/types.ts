@@ -12,7 +12,7 @@ interface locationInterface {
   postalCode: string;
   country: string;
 }
-export interface  IStore {
+export interface IStore {
   name: string;
   description: string;
   location: locationInterface;
