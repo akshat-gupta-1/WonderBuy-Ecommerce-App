@@ -22,7 +22,7 @@ const app = express();
 const PORT = 5000 || process.env.PORT;
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://wonder-buy-api.vercel.app',
     credentials: true,
   })
 );
