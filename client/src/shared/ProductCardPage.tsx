@@ -10,7 +10,7 @@ const ProductCardPage = ({ data }: ProductCardPageProps) => {
   return (
     <div className="grid gap-4 p-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {data.isFetching
-        ? Array.from({ length: 12 }).map((item, index) => (
+        ? Array.from({ length: 12 }).map((_, index) => (
             <div key={index}>
               <ProductCardSkeleton />
             </div>
