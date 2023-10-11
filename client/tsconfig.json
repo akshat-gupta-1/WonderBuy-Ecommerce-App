@@ -22,8 +22,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@backend/*": ["../server/src/*"]
-    }
+      "@backend/*": ["../server/src/*"],
+      "mongoose": ["node_modules/mongoose"]
+    },
+    "types": ["mongoose"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
