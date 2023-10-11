@@ -21,7 +21,7 @@ const CTA = () => {
           </div>
         </div>
         <img
-          src="public/assets/imgs/pngegg(2).png"
+          src="/assets/imgs/pngegg(2).png"
           alt=""
           className="hidden max-h-[350px] max-w-[550px] object-center sm:block"
         />
