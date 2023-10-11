@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPrivate from "@/components/auth/hooks/useAxiosPrivate";
-import { IUser } from "@backend/types/types";
+import { IUserW } from "@backend/types/types";
 interface useUser {
-  user?: IUser;
+  user?: IUserW;
 }
 const useUser = (): useUser => {
   const axiosPrivate = useAxiosPrivate();
@@ -10,7 +10,7 @@ const useUser = (): useUser => {
     ["user"],
     async () => {
       const { data } = await axiosPrivate.get("/api/user");
-      return data as IUser;
+      return data as IUserW;
     },
     {
       staleTime: 10 * 60 * 100,

@@ -1,4 +1,11 @@
 import { Document, Schema } from 'mongoose';
+export interface IUserW {
+  userName: string;
+  email: string;
+  password: string;
+  refreshToken?: string;
+  _id: string;
+}
 export interface IUser extends Document {
   userName: string;
   email: string;
