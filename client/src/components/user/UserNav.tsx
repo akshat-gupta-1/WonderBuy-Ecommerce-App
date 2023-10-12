@@ -110,10 +110,10 @@ const UserNav = () => {
                               <img
                                 src={item.product.imageUrl[0]}
                                 alt=""
-                                className="h-[75px] w-[75px] object-contain"
+                                className="xs:h-[75px] xs:w-[75px] h-[50px] w-[50px] object-contain"
                               />
                               <div className="flex flex-col justify-center space-y-1">
-                                <p className="text-lg font-semibold">
+                                <p className="xs:text-lg text-sm font-semibold">
                                   {item.product.name}
                                 </p>
                                 <p className="text-sm font-medium text-slate-10">
@@ -122,10 +122,10 @@ const UserNav = () => {
                                 </p>
                               </div>
                             </div>
-                            <div className="flex items-center space-x-6">
+                            <div className="xs:space-x-6 flex items-center space-x-2">
                               <div className="flex items-center space-x-3">
                                 <Button
-                                  className="rounded-none border border-blue-8 p-1 px-2"
+                                  className="xs:h-10 xs:w-10 h-7 w-7 rounded-none border border-blue-8 p-1 px-2"
                                   variant={"blue"}
                                   onClick={() =>
                                     addProduct({
@@ -139,7 +139,7 @@ const UserNav = () => {
                                 </Button>
                                 <span>{item.quantity}</span>
                                 <Button
-                                  className="rounded-none border border-blue-8 p-1 px-2"
+                                  className="xs:h-10 xs:w-10 h-8 w-8 rounded-none border border-blue-8 p-1 px-2"
                                   variant={"blue"}
                                   onClick={() =>
                                     addProduct({
@@ -152,7 +152,7 @@ const UserNav = () => {
                                 </Button>
                               </div>
                               <Button
-                                className="border border-blue-10 p-2"
+                                className="xs:h-10 xs:w-10 h-8 w-8 border border-blue-10 p-2"
                                 variant={"blue"}
                                 onClick={() =>
                                   addProduct({
